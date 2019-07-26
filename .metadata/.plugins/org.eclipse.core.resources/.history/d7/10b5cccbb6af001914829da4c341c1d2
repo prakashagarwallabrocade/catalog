@@ -1,0 +1,30 @@
+package com.example.demo.repository;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.demo.domain.Catalog;
+import com.example.demo.domain.Category;
+import com.example.demo.domain.Product;
+
+public class TestData {
+
+	public Catalog getTestData() {
+
+		Catalog catalog = new Catalog();
+		List<Category> categories = new ArrayList<>();
+		Category television = new Category();
+		categories.add(television);
+		java.util.List<Product> products = new ArrayList<>();
+		Product samsungTV = new Product();
+		samsungTV.setName("samsungTV");
+		samsungTV.setPrice(new BigDecimal(100.00));
+		products.add(samsungTV);
+		television.setProducts(products);
+		catalog.setCategories(categories);
+		return catalog;
+
+	}
+
+}

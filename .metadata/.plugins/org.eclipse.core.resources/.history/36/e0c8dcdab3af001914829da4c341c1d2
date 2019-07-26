@@ -1,0 +1,11 @@
+package com.example.demo.domain;
+
+import java.math.BigDecimal;
+
+public class Product {
+	
+	private String name;
+	private BigDecimal price;
+	
+
+}
