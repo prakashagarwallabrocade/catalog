@@ -23,10 +23,12 @@ public class TestData {
 
 		java.util.List<Product> products = new ArrayList<>();
 		Product samsungTV = new Product();
+		samsungTV.setProductId(1);
 		samsungTV.setName("samsungTV");
 		samsungTV.setPrice(new BigDecimal(100.00));
 
 		Product lgTV = new Product();
+		lgTV.setProductId(2);
 		lgTV.setName("LG TV");
 		lgTV.setPrice(new BigDecimal(200.00));
 
@@ -37,10 +39,12 @@ public class TestData {
 		categories.add(television);
 
 		Category washingMachine = new Category();
+		
 		washingMachine.setName("washing Machine");
 		categories.add(washingMachine);
 		java.util.List<Product> washingMachineProdcuts = new ArrayList<>();
 		Product samsungWashingMachine = new Product();
+		samsungWashingMachine.setProductId(3);
 		samsungWashingMachine.setName("samsung Washing Machine");
 		samsungWashingMachine.setPrice(new BigDecimal(200.00));
 		washingMachineProdcuts.add(samsungWashingMachine);
